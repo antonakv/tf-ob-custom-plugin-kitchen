@@ -301,7 +301,6 @@ go 1.18.3 from Michael Hudson-Doyle (mwhudson) installed
        go: downloading go.opencensus.io v0.22.0
        go: downloading github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
        go: downloading github.com/hashicorp/golang-lru v0.5.1
-       rm: cannot remove '.terraform': Is a directory
        
        Initializing the backend...
        

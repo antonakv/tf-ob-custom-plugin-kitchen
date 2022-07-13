@@ -68,7 +68,7 @@ cp $GOPATH/bin/terraform-provider-extip /home/vagrant/.local/share/terraform/plu
 
 cd /vagrant
 
-rm .terraform*
+rm -Rf .terraform*
 
 terraform init
 
