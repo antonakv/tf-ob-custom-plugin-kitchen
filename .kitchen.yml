@@ -4,12 +4,18 @@ driver:
 
 provisioner:
   name: shell
+  root_path: '/home/vagrant/'
+  script: 'scripts/provision.sh'
+  arguments: ['--debug']
 
 platforms:
   - name: vbox/bionic64
     driver:
       box: bionic64
       provider: virtualbox
+      provision: true
+      synced_folders: 
+        - [".", "/vagrant", "create: true"]
 
 verifier:
   name: inspec
