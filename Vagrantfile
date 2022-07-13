@@ -10,4 +10,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "scripts/install_go.sh"
   config.vm.provision "shell", path: "scripts/addhashicorprepo.sh"
   config.vm.provision "shell", path: "scripts/install_kitchen.sh"
+  config.vm.provision "shell", path: "scripts/run_terraform.sh", privileged: false
 end

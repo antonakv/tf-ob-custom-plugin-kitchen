@@ -34,3 +34,5 @@ which go || {
     chown ${SUDO_USER} ${PROFILE}
   fi
 }
+
+sudo chown -R vagrant: /home/vagrant/go
