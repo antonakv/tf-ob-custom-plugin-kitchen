@@ -26,7 +26,7 @@ which go || {
     grep -v 'GOPATH|GOROOT' ${PROFILE}.ori | sudo tee -a ${PROFILE}
     echo 'export GOROOT=/snap/go/current' | sudo tee -a ${PROFILE}
     echo 'export PATH=$PATH:/snap/bin:$GOROOT/bin' | sudo tee -a ${PROFILE}
-    echo 'export GOPATH=~/go' | sudo tee -a ${PROFILE}
+    echo 'export GOPATH=/home/vagrant/go' | sudo tee -a ${PROFILE}
   }
 
   if [ "${SUDO_USER}" ]; then
